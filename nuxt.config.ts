@@ -5,7 +5,19 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-  modules: ['@pinia/nuxt', 'nuxt-swiper', "@nuxt/image"],
+  modules: [
+    '@pinia/nuxt', 
+    'nuxt-swiper', 
+    '@nuxt/image',
+    'yandex-metrika-module-nuxt3'
+  ],
+  yandexMetrika: {
+    id: '95402507',
+    clickmap:true,
+    trackLinks:true,
+    accurateTrackBounce:true,
+    webvisor:true
+  },
   components: [
     {
       path: '~/components',
