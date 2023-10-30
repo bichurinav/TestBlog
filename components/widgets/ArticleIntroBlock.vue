@@ -17,7 +17,7 @@ const props = defineProps<Props>();
 <template lang="pug">
 section.article-intro
   NuxtImg(
-    class="article-intro__image image-cover"
+    class="article-intro__image"
     :src="props.data.image"
     :alt="props.data.title"
     format="webp"
